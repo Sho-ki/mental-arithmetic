@@ -6,4 +6,91 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #e3edf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start {
+	box-shadow: 3px 4px 34px 6px #424040;
+	background:linear-gradient(to bottom, #949494 5%, #b1aeae 100%);
+	background-color:#5c5c5c;
+	border-radius:18px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 2em;
+	padding: 2em;
+    outline: none
+}
+.start:hover {
+	background:linear-gradient(to bottom, #444444 5%, #424242 100%);
+	background-color:#353535;
+}
+.start:active {
+	position:relative;
+	top:3px;
+}
+
+.countdown {
+    position: relative;
+    height: 100px;
+    width: 100%
+  }
+   
+  .countdown-list {
+    counter-increment: number ;
+    position: absolute;
+    -webkit-animation: countdown 1s;
+    margin: auto 0;
+    width: 100%;
+    opacity:0;
+    font-size: 60px;
+    text-align: center;
+  }
+   
+  .countdown-list:before {
+    content: counter(number);
+  }
+  .countdown-list:nth-child(3) { -webkit-animation-delay: 0.5s;}
+  .countdown-list:nth-child(2) { -webkit-animation-delay: 1.5s;}
+  .countdown-list:nth-child(1) { -webkit-animation-delay: 2.5s;}
+   
+  @-webkit-keyframes countdown {
+    50% {opacity:1;}
+    100% {opacity:0;}
+  }
+
+  .numberContainer {
+    width: auto;
+    padding: 80px 120px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0 10px 10px 10px rgb(0 0 0 / 20%);
+}
+
+.answerAgain {
+	box-shadow: 3px 4px 34px 6px #424040;
+	background-color:#ff8484;
+	border-radius:18px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 2em;
+	padding: 1em;
+    outline: none;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nextQuestion{
+    box-shadow: 3px 4px 34px 6px #424040;
+	background-color:#2cd5db;
+	border-radius:18px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 2em;
+	padding: 1em;
+    outline: none;
+    width: 100%;
 }
