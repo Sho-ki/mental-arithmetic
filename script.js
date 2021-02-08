@@ -38,7 +38,6 @@ function showingNumber(times, index){
 }
 
 function showingWord (times, index){
-    console.log(index, wordList[0])
     if(wordList[0].split('')[index] === undefined){
         return resultScreen();
     }
@@ -63,7 +62,7 @@ function getRandom(min, max) {
 function resultScreen(){
     buttonContainer.innerHTML =`<div class="answerContainer" id="numberContainer"><p class="formTitle">Number</p><input type=text id='resultInput'></input><p class="formTitle">Word</p><input type=text id='resultInputWord'></input><input id='submit' class="submit" type=submit name="button" value="submit"></input></div>`
     let submit = document.getElementById('submit')
-    console.log(resultNumber, wordList[0])
+    
     let getNumber = document.getElementById('resultInput');
     let getWord = document.getElementById('resultInputWord')
     setCursorNumber(getNumber);
@@ -179,7 +178,6 @@ async function getWord(){
                 wordList.push(word);
             }
         }
-        console.log(wordList)
     }catch {
         getWord();
     }
