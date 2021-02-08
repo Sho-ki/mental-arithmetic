@@ -61,14 +61,20 @@ body {
   }
 
   .numberContainer {
-    width: auto;
+    width: 200px;
     padding: 80px 120px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.836);
     box-shadow: 0 10px 10px 10px rgb(0 0 0 / 20%);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
 }
 
-.answerAgain {
+.tryAgain {
 	box-shadow: 3px 4px 34px 6px #424040;
 	background-color:#ff8484;
 	border-radius:18px;
@@ -93,4 +99,43 @@ body {
 	padding: 1em;
     outline: none;
     width: 100%;
+}
+
+.formTitle{
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.submit {
+  margin-top: 20px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.answerContainer{
+  width: 200px;
+    padding: 60px 120px 100px 120px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0 10px 10px 10px rgb(0 0 0 / 20%);
+    height: 150px;
+}
+
+.answerContainer input{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width:480px) {
+  .button-container {
+    margin: 10px
+  }
+  .answerContainer{
+    /* width: auto; */
+    padding: 60px 50px 100px 50px;
+  }
+  .numberContainer{
+    /* width: auto; */
+    padding: 60px 50px 60px 50px;
+  }
 }
