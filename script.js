@@ -115,7 +115,7 @@ function judge(resultInput, resultInputWord){
             buttonContainer.innerHTML = `<div class='button-container' id='buttonContainer'>
             <button id='button' class='start' onclick='start()'>START</button></div>`
         } else {
-            alert('What a stupid guy!')
+            alert('Incorrect')
             buttonContainer.innerHTML = `<div class='end-button-container' id='buttonContainer'>
             <button id='button' class='tryAgain' onclick='restart()'>Try Again</button>
             <button id='button' class='nextQuestion' onclick='start()'>Next Question</button></div>`

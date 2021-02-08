@@ -12,7 +12,7 @@ body {
 }
 .start {
 	box-shadow: 3px 4px 34px 6px #424040;
-	background:linear-gradient(to bottom, #949494 5%, #b1aeae 100%);
+	background:linear-gradient(to bottom, #4ec2f0 5%, #1ea2c4 100%);
 	background-color:#5c5c5c;
 	border-radius:18px;
 	border:1px solid #000000;
@@ -23,8 +23,8 @@ body {
     outline: none
 }
 .start:hover {
-	background:linear-gradient(to bottom, #444444 5%, #424242 100%);
-	background-color:#353535;
+	background:linear-gradient(to bottom, #3a94b8 5%, rgb(39, 109, 141) 100%);
+	background-color:#28596d;
 }
 .start:active {
 	position:relative;
@@ -34,7 +34,8 @@ body {
 .countdown {
     position: relative;
     height: 100px;
-    width: 100%
+    width: 100%;
+    left: -19px
   }
    
   .countdown-list {
@@ -108,8 +109,12 @@ body {
 
 .submit {
   margin-top: 20px;
-  height: 25px;
-  font-size: 15px;
+  height: 35px;
+  font-size: 18px;
+  background-color: darkorange;
+  outline: none;
+  border: 1px solid;
+  border-radius: 4px;
 }
 
 .answerContainer{
