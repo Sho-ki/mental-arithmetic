@@ -6,6 +6,7 @@ let forAnswerAgain = [];
 let wordList = [];
 
 
+
 async function start(){
     wordList.shift()
     await getWord()
@@ -142,7 +143,7 @@ function restartHelper(forAnswerAgainLength, index){
         numberContainer.innerText = '  '
     }, 1300)
     setTimeout (function (){    
-        return showingNumber(times-1, index+1)}, 1400)
+        return restartHelperWord(forAnswerAgainLength, index)}, 1400)
 }
 
 function restartHelperWord(forAnswerAgainLength, index){
@@ -157,7 +158,7 @@ function restartHelperWord(forAnswerAgainLength, index){
         numberContainer.innerText = '  '
     }, 1300)
     setTimeout (function (){    
-        return showingNumber(times-1, index+1)}, 1400)
+        return restartHelper(forAnswerAgainLength, index+1)}, 1400)
 }
 
 
